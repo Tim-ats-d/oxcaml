@@ -145,6 +145,7 @@
   - 0 compilation units shapes
   - root dir: none
   
+<<<<<<< HEAD:external/merlin/src/ocaml-index/tests/tests-dirs/index-project.t
   Index "test.uideps" contains:
   - 14 definitions
   - 36 locations
@@ -191,3 +192,7 @@ the sake of occurrences, and if anything, the cms behavior seems preferrable.
   42a43
   >  uid: Main.7; locs: "": File "main.ml", line 10, characters 7-8
   [1]
+||||||| parent of 3bbf3ebbe4 (Add a LRU cache to limit indexing memory usage.):src/ocaml-index/tests/tests-dirs/index-project.t
+=======
+  $ ocaml-index aggregate -o project.uideps main.uideps foo.uideps bar.uideps 
+>>>>>>> 3bbf3ebbe4 (Add a LRU cache to limit indexing memory usage.):src/ocaml-index/tests/tests-dirs/index-project.t
