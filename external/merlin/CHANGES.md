@@ -1,3 +1,9 @@
+unreleased
+==========
+
+  + merlin library
+    - Implemente a pointer to another index file: a new optimization of how ocaml-index builds index files. The resulting index files should take up less disk space (#XXX)
+
 merlin 5.6
 ==========
 Sat Oct 04 15:10:42 CEST 2025
