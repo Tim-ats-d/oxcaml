@@ -1,10 +1,11 @@
 module Uid = Ocaml_typing.Shape.Uid
 module Ident = Ocaml_typing.Ident
 module Uid_set = Ocaml_typing.Shape.Uid.Set
+module Compilation_unit = Ocaml_typing.Compilation_unit
 module Union_find = Merlin_index_format.Union_find
 
 let f = Uid_set.union
-let uid name = Uid.of_compilation_unit_id (Ident.create_persistent name)
+let uid name = Uid.of_compilation_unit_id (Compilation_unit.of_string name)
 let a = uid "A"
 let b = uid "B"
 let c = uid "C"

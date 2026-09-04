@@ -1,6 +1,6 @@
 module Cache = Hashtbl.Make (Int)
 
-type store = { filename : string; cache : any_link Cache.t }
+type store = { filename : string; id : int; cache : cache }
 
 and cache = any_link Cache.t
 
